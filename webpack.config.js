@@ -26,7 +26,7 @@ module.exports = {
   // context: path.resolve(__dirname, "src"),
   mode: "development",
   entry: {
-    main: ["@babel/polyfill", "./index.js"], //chank index.js + //post.js
+    main: ["@babel/polyfill", "./src/index.js"], //chank index.js + //post.js
     // analytics: "./analytics.js",
   },
   output: {
@@ -47,7 +47,7 @@ module.exports = {
   },
   plugins: [
     new HTMLWebpackPlugin({
-      template: "./index.html",
+      template: "./src/index.html",
     }),
     new CleanWebpackPlugin(),
     // new CopyWebpackPlugin({
@@ -59,7 +59,7 @@ module.exports = {
     //   ],
     // }),
     new CopyWebpackPlugin({
-      patterns: [{ from: "./img", to: "img" }],
+      patterns: [{ from: "./src/assets/img", to: "img" }],
     }),
     new MiniCssExtractPlugin({
       filename: "[name].[contenthash].css",
