@@ -31,7 +31,7 @@ module.exports = {
   },
   output: {
     filename: "[name].[contenthash].js",
-    path: path.resolve(__dirname, "docs", "dist"),
+    path: path.resolve(__dirname, "docs"),
   },
   resolve: {
     extensions: [".js", ".json", ".png", ".jpg"],
