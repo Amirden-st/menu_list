@@ -38,7 +38,7 @@ module.exports = {
     // alias: {
     //   "@models": path.resolve(__dirname, "src/models"),
     //   "@": path.resolve(__dirname, "src"),
-    // },
+    //},
   },
   optimization: optimization(),
   devServer: {
